@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do_list{
+    width: 336px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+.to-do_list .head{
+    width: 100%;
+    height: 28px;
+    background-color: #FFDC40;
+    border-radius: 10px 10px 0 0;
+}
+.to-do_list .body{
+    padding: 13px 28px;
+}
+.to-do_list .body h1{
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 17px;
+}
+.to-do_list .body p{
+    text-align: right;
+    margin-bottom: 11px;
+}
+.to-do_list .body form{
+    width: 100%;
+}
+.to-do_list .body form .for-inp{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top: 20px;
+}
+.to-do_list .body form .for-inp input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.to-do_list .body form .for-inp img{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+.to-do_list .body form .for-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.to-do_list .body form .for-btn button{
+    width: 170px;
+    height: 42px;
+    border-radius: 71px;
+    background-color: #833AE0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+}
+.to-do_list .body form .for-btn button:hover{
+    background-color: #9953F1;
+}
+.to-do_list .body form .for-btn button span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 71px;
+    background-color: #9953F1;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transition: .4s;
+}
+.to-do_list .body form .for-btn button:hover span{
+    background-color: #AA68FE;
+}
