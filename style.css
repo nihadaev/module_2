@@ -38,29 +38,78 @@
     text-align: right;
     margin-bottom: 11px;
 }
+.to-do_list .body p .sort{
+    display: none;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url('./img/sort.svg');
+    transition: .4s;
+}
+.to-do_list .body p .sort:hover{
+    background-image: url('./img/sort_hover.svg');
+}
+
+.to-do_list .body p .sort.active{
+    display: inline-block;
+}
+.to-do_list p .sort_2{
+    display: none;
+    cursor: pointer;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url('./img/sort_2.svg');
+    transition: .4s;
+}
+.to-do_list p .sort_2:hover{
+    background-image: url('./img/sort_2_hover.svg');
+}
+.to-do_list p .sort_2.active{
+    display: inline-block;
+}
 .to-do_list .body form{
     width: 100%;
 }
+.to-do_list .body .form-head{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
 .to-do_list .body form .for-inp{
     width: 100%;
     height: 40px;
     position: relative;
-    margin-top: 20px;
 }
 .to-do_list .body form .for-inp input{
     width: 100%;
     height: 40px;
-    border: 1px solid #C4C4C4;
     border-radius: 10px;
     padding: 0 13px;
     font-size: 18px;
     font-weight: 400;
+    outline: none;
+    border: none;
 }
-.to-do_list .body form .for-inp img{
+
+
+.to-do_list .body form .for-inp .del{
+    border-radius: 50%;
+    font-size: 13px;
+    color: #C4C4C4;
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 7px;
+    right: 15px;
     cursor: pointer;
+    border: 1px solid #C4C4C4;
+    text-align: center;
+    padding: 4px 8px;
+    transition: .4s;
+}
+.to-do_list .body form .for-inp .del:hover{
+    background: #833AE0;
+    border: 1px solid #833AE0;
+    color: #fff;
 }
 .to-do_list .body form .for-btn{
     width: 100%;
